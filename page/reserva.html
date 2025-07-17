@@ -148,6 +148,74 @@
 
 
 
+<!-- PÁGINA DE RESERVAS -->
+<section class="py-5" style="background-color: #ffffff;">
+  <div class="container">
+    
+    <!-- TÍTULO -->
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h2 class="fw-bold text-danger" style="font-size: 2.5rem;">
+        <i class="bi bi-calendar2-check text-warning me-2"></i> Reserva Tu Estancia
+      </h2>
+      <p class="lead text-muted" style="max-width: 700px; margin: auto;">
+        ¡Planifica tu visita con nosotros! Completa el formulario y asegura tu habitación en el Gran Hospedaje Imperial de Huanta.
+      </p>
+    </div>
+
+    <!-- FORMULARIO DE RESERVA -->
+    <form class="row g-4" data-aos="fade-up">
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Nombre completo</label>
+        <input type="text" class="form-control shadow-sm" placeholder="Jose Ramirez" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Correo electrónico</label>
+        <input type="email" class="form-control shadow-sm" placeholder="JoseRamirez@gmail.com" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Teléfono</label>
+        <input type="tel" class="form-control shadow-sm" placeholder="901267943" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Número de personas</label>
+        <input type="number" min="1" class="form-control shadow-sm" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Fecha de llegada</label>
+        <input type="date" class="form-control shadow-sm" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label fw-semibold text-muted">Fecha de salida</label>
+        <input type="date" class="form-control shadow-sm" required>
+      </div>
+      <div class="col-12">
+        <label class="form-label fw-semibold text-muted">Mensaje adicional</label>
+        <textarea class="form-control shadow-sm" rows="3" placeholder="Ej: Tipo de habitación, necesidades especiales..."></textarea>
+      </div>
+      <div class="col-12 text-center mt-3">
+        <button type="submit" class="btn btn-danger px-5 py-2 fw-semibold shadow" style="border-radius: 10px;">
+          <i class="bi bi-send-check me-2"></i> Reservar Ahora
+        </button>
+      </div>
+    </form>
+
+    <!-- MAPA DE UBICACIÓN -->
+<div class="mt-5" data-aos="zoom-in">
+  <h4 class="fw-bold text-danger text-center mb-4">
+    <i class="bi bi-geo-alt-fill text-warning me-2"></i> ¿Dónde estamos ubicados?
+  </h4>
+
+  <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden" style="border: 3px solid #f0dada;">
+    <iframe 
+      src="https://www.google.com/maps?q=Huanta,+Ayacucho,+Perú&output=embed" 
+      loading="lazy"
+      style="border:0; width:100%; height:100%;" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+</section>
 
 
 
