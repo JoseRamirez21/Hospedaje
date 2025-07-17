@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospedaje Imperial</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Asegúrate de tener animate.css en tu <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome 6 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* HEADER CON DEGRADADO */
+    .navbar-gradient {
+     background: linear-gradient(135deg, #7b1e1e 0%, #c0392b 100%);
+    }
+
+    .navbar-gradient .nav-link {
+      color: #f8f9fa;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-gradient .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .navbar-brand span {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+
+    /* FOOTER */
+    footer h5, footer h6 {
+      font-weight: 600;
+    }
+
+    footer p, footer li, footer a {
+      font-size: 0.95rem;
+    }
+     #carruselHospedaje {
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  #carruselHospedaje .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Opcional: para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    #carruselHospedaje .carousel-item img {
+      height: 300px;
+    }
+  }
+  .bg-white:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .marquee-slide {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar-gradient shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="../img/HospedajeImperial.png" alt="Hospedaje Imperial" height="65">
+        <span class="ms-2">Hospedaje Imperial</span>
+      </a>
+      
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="habitaciones.html" class="nav-link">Habitaciones</a></li>
+          <li class="nav-item"><a href="servicio.html" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="reserva.html" class="nav-link">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<section class="bg-danger text-white py-2 d-none d-md-block">
+  <div class="container marquee-container small fw-semibold">
+    <div class="marquee-slide">
+      <span class="me-5"><i class="bi bi-shield-check"></i> Seguridad 24/7</span>
+      <span class="me-5"><i class="bi bi-stars"></i> 2 Estrellas</span>
+      <span class="me-5"><i class="bi bi-wifi"></i> WiFi Rápido</span>
+      <span class="me-5"><i class="bi bi-check-circle"></i> Pagos en efectivo y Transferencia</span>
+      <span class="me-5"><i class="bi bi-house-heart"></i> Comodidad total</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SOBRE NOSOTROS + VISIÓN + MISIÓN + VALORES -->
+<!-- SOBRE NOSOTROS + VISIÓN + MISIÓN + VALORES -->
+<section style="min-height: 90vh; padding-top: 6rem; padding-bottom: 6rem; background: linear-gradient(135deg, #ffffff, #fff0f0);">
+  <div class="container">
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h2 class="fw-bold text-danger" style="font-size: 2.5rem;">
+        <i class="bi bi-buildings-fill me-2 text-warning"></i> Sobre Nosotros
+      </h2>
+      <p class="lead text-muted" style="max-width: 700px; margin: auto;">
+        Somos el <strong>Gran Hospedaje Imperial</strong> de Huanta, brindando experiencias inolvidables con calidad, limpieza y atención personalizada en el corazón de la ciudad.
+      </p>
+    </div>
+
+
+  <!-- TEXTO IZQUIERDA -->
+  <div class="row align-items-center mb-5" style="min-height: 550px;">
+  <!-- TEXTO IZQUIERDA -->
+  <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+    <div style="background: rgba(255,255,255,0.7); backdrop-filter: blur(12px); padding: 3rem; border-radius: 25px; box-shadow: 0 12px 24px rgba(0,0,0,0.1); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; justify-content: center;" data-aos="fade-up" data-aos-duration="1200">
+
+  <h4 class="fw-bold text-danger mb-4" style="font-size: 2rem;">
+    Bienvenidos al Hospedaje Imperial
+  </h4>
+
+  <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+    En el corazón de Huanta, te damos la bienvenida a un espacio donde la calidez y la comodidad se combinan para brindarte una experiencia única.
+  </p>
+
+  <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+    Nuestras instalaciones están diseñadas para que te sientas como en casa, ya sea que viajes por descanso, trabajo o aventura. Cada habitación cuenta con los servicios esenciales que garantizan tu tranquilidad: limpieza, WiFi de alta velocidad, seguridad 24/7 y atención personalizada.
+  </p>
+
+  <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+    Nos destacamos por el trato humano, el compromiso con nuestros huéspedes y un ambiente familiar que te hará querer volver. ¡Te esperamos para que vivas una estadía inolvidable!
+  </p>
+</div>
+
+  </div>
+
+  <!-- IMAGEN DERECHA -->
+  <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-delay="300">
+    <img src="../img/h1.jpg" alt="Hospedaje Imperial" 
+         style="width: 100%; height: 550px; object-fit: cover; 
+                border-radius: 25px; box-shadow: 0 16px 32px rgba(0,0,0,0.2); 
+                transition: transform 0.5s ease;" 
+         onmouseover="this.style.transform='scale(1.03)'" 
+         onmouseout="this.style.transform='scale(1)'">
+  </div>
+</div>
+
+
+
+    <!-- VISIÓN Y MISIÓN -->
+    <div class="row text-center g-4 mb-5">
+      <!-- VISIÓN -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div style="background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); padding: 2rem; border-radius: 20px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); transition: transform 0.3s ease;"
+             onmouseover="this.style.transform='translateY(-5px)';"
+             onmouseout="this.style.transform='translateY(0)';">
+          <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-eye-fill text-danger me-2"></i> Visión
+          </h5>
+          <p class="text-muted">Ser reconocidos como el hospedaje de preferencia en Huanta, por nuestra hospitalidad, calidad de servicio y compromiso con el bienestar del huésped.</p>
+        </div>
+      </div>
+
+      <!-- MISIÓN -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div style="background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); padding: 2rem; border-radius: 20px; box-shadow: 0 12px 24px rgba(0,0,0,0.08); transition: transform 0.3s ease;"
+             onmouseover="this.style.transform='translateY(-5px)';"
+             onmouseout="this.style.transform='translateY(0)';">
+          <h5 class="fw-bold text-primary mb-3">
+            <i class="bi bi-bullseye text-danger me-2"></i> Misión
+          </h5>
+          <p class="text-muted">Brindar un servicio de hospedaje que supere las expectativas de nuestros clientes, ofreciendo comodidad, seguridad y atención humana las 24 horas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VALORES -->
+    <div style="background: rgba(255,255,255,0.65); backdrop-filter: blur(10px); padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+      <h4 class="fw-bold text-center text-danger mb-4" data-aos="zoom-in">
+        <i class="bi bi-stars text-warning me-2"></i> Nuestros Valores
+      </h4>
+      <div class="row text-center g-4">
+        <!-- Valor 1 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div style="padding: 1.2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div class="fs-1 mb-2">🤝</div>
+            <div class="fw-semibold text-muted">Respeto</div>
+          </div>
+        </div>
+        <!-- Valor 2 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div style="padding: 1.2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div class="fs-1 mb-2">💼</div>
+            <div class="fw-semibold text-muted">Responsabilidad</div>
+          </div>
+        </div>
+        <!-- Valor 3 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div style="padding: 1.2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div class="fs-1 mb-2">🌟</div>
+            <div class="fw-semibold text-muted">Honestidad</div>
+          </div>
+        </div>
+        <!-- Valor 4 -->
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div style="padding: 1.2rem; background: rgba(255,255,255,0.9); border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <div class="fs-1 mb-2">🎯</div>
+            <div class="fw-semibold text-muted">Compromiso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FOOTER BONITO CON POPPINS -->
+<footer class="bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row text-center text-md-start justify-content-center">
+
+      <!-- Columna 1: Logo y descripción -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <img src="../img/HospedajeImperial.png" alt="Hospedaje Imperial" height="55" class="mb-2">
+          <h5 class="fw-bold">Hospedaje Imperial</h5>
+          <p class="small">Tu espacio ideal para descansar en el corazón de Huanta. Atendemos con calidad y calidez.</p>
+        </div>
+      </div>
+
+      <!-- Columna 2: Contacto -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <h6 class="text-uppercase fw-bold mb-3">Contacto</h6>
+          <ul class="list-unstyled small">
+            <li>📍 Jr. Libertad N° 121 - Huanta</li>
+            <li>📞 +51 966 264 707</li>
+            <li>✉️ imperialhuanta@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna 3: Enlaces -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <h6 class="text-uppercase fw-bold mb-3">Síguenos</h6>
+          <a href="https://web.whatsapp.com/" 
+   class="text-light d-block mb-1 text-decoration-none" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <i class="bi bi-whatsapp"></i> WhatsApp
+</a>
+
+<a href="https://www.facebook.com/hotelimperialhuanta/?locale=es_LA" 
+   class="text-light d-block mb-1 text-decoration-none" 
+   target="_blank" 
+   rel="noopener noreferrer">
+  <i class="bi bi-facebook"></i> Facebook
+</a>
+          <a href="politica.html" class="text-light d-block text-decoration-none">
+            <i class="bi bi-shield-lock-fill"></i> Política de Privacidad
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <div class="text-center small">
+      © 2025 Hospedaje Imperial - Todos los derechos reservados a JCRR.
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,     // Duración de la animación
+    once: false,        // Si quieres que se repita cada vez que hace scroll
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
